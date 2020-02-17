@@ -22,6 +22,7 @@
             </div>
             <div class="mt-2">
               <span><a href="#"> <i class="fab fa-linkedin-in"></i> </a></span>
+              <span class="ml-3"><a href="#"> <i class="fab fa-github"></i> </a></span>
             </div>
         </div>
         
@@ -76,6 +77,24 @@ export default {
           id:5,
           url:"https://faitlynbrand.com/",
           name:"Fait",
+          description:"E-commerce app with payment integration"
+        },
+         six:{
+          id:6,
+          url:"https://loop.rbshop.com.ng/",
+          name:"Loop Aba",
+          description:"E-commerce app with payment integration"
+        },
+         seven:{
+          id:7,
+          url:"http://grimebusters.enapstargroup.com/",
+          name:"Grimebusters",
+          description:"Company profile"
+        },
+         eight:{
+          id:8,
+          url:"https://bdzofficial.com/",
+          name:"Bdz official",
           description:"E-commerce app with payment integration"
         },
       }
