@@ -1,7 +1,7 @@
 <template>
   <b-container>
     <b-row class="justify-content-center">
-      <b-col cols="2">
+      <b-col cols="4" md="2">
         <div class="d-flex justify-content-center">
           <img class="img-fluid rounded-circle bg-white " src="@/assets/img/1.png" alt="">
         </div>
@@ -15,23 +15,29 @@
         <p class="m-0 text-color" >Some of the projects i've worked on are shown below </p>
       </b-col>
       <b-col cols="12" class="text-center">
-        <div class="mt-4">
-            <div>
-              <span class=""><i class="fas fa-phone-alt text-color"></i> <span class="contact text-color">(+234)8101209762</span></span>
-              <span class="ml-3"><i class="fas fa-envelope text-color"></i> <span class="contact text-color">epicgenii18@gmail.com</span></span>
-            </div>
-            <div class="mt-2">
-              <span><a href="#"> <i class="fab fa-linkedin-in"></i> </a></span>
-              <span class="ml-3"><a href="#"> <i class="fab fa-github"></i> </a></span>
-            </div>
-        </div>
+
+        <b-row class="mt-4 justify-content-center">
+          <b-col cols="12" class="text-center">
+                  <span class=""><i class="fas fa-phone-alt text-color"></i> <span class="contact text-color">(+234)8101209762</span></span>
+
+
+          </b-col>
+         
+          <b-col cols="12" class="mt-2">
+             <span><a href="#"> <i class="fab fa-linkedin-in"></i> </a></span>
+             <span class="ml-3"><a href="#"> <i class="fab fa-github"></i> </a></span>
+
+          </b-col>
+
+           
+        </b-row>
         
 
       </b-col>
-      <b-col cols="6" class="mt-3 text-center">
-        <div class="rounded-pill bg-dark pt-2 pb-2" >
-            <a href="#">Arquilax Group</a> <br>
-            <a href="#"><small>Company profile site with logistics tracking system</small></a>
+      <b-col cols="12" md="8" lg ="6"  class="mt-3 text-center">
+        <div :key="value.id" v-for='(value) in portfoilo_data' class="rounded-pill bg-dark pt-2 pb-2 portfoilo-pill mb-2 portfoilo-shadow" >
+            <p class="text-white m-0">{{value.name}}</p>
+            <p class="text-white m-0"><small>{{value.description}}</small></p>
           </div>
 
       </b-col>
@@ -50,52 +56,65 @@ export default {
     return{
       portfoilo_data:{
         one:{
-          id:1,
+          id:"one",
           url:"http://www.arquilaxgroup.com/",
           name:"Arquilax Group",
-          description:"Company profile site with logistics tracking system/"
+          description:"Company profile site with logistics tracking system"
         },
         two:{
-          id:2,
+          id:"two",
           url:"https://luxxeplace.com/",
           name:"The Luxxe Place",
           description:"E-commerce app with payment integration "
         },
          three:{
-          id:3,
+          id:"three",
           url:"http://cqcxradio.co/",
           name:"CQCX Radio ",
           description:"Music streaming app with E-commerce functionality"
         },
-         four:{
-          id:4,
-          url:"http://cqcxradio.co/",
-          name:"CQCX Radio ",
-          description:"Music streaming app with E-commerce functionality"
-        },
+        
          five:{
-          id:5,
+          id:"five",
           url:"https://faitlynbrand.com/",
           name:"Fait",
           description:"E-commerce app with payment integration"
         },
          six:{
-          id:6,
+          id:"six",
           url:"https://loop.rbshop.com.ng/",
           name:"Loop Aba",
           description:"E-commerce app with payment integration"
         },
          seven:{
-          id:7,
+          id:"seven",
           url:"http://grimebusters.enapstargroup.com/",
           name:"Grimebusters",
           description:"Company profile"
         },
          eight:{
-          id:8,
+          id:"eight",
           url:"https://bdzofficial.com/",
           name:"Bdz official",
           description:"E-commerce app with payment integration"
+        },
+         nine:{
+          id:"nine",
+          url:"https://habbyrose.com/",
+          name:"Habby Rose",
+          description:"E-commerce app with payment integration"
+        },
+         ten:{
+          id:"ten",
+          url:"https://auxanet.kaytar.ng/",
+          name:"Auxanet Nigeria Limited",
+          description:"Company profile site"
+        },
+         eleven:{
+          id:"eleven",
+          url:"https://blue.beautyonthegolive.com/",
+          name:"True Blue Energy",
+          description:"Company profile site"
         },
       }
     }
@@ -108,6 +127,21 @@ export default {
 .text-color{
   color: #DCC1C2;
 }
+.portfoilo-pill{
+  cursor: pointer;
+}
+.portfoilo-pill:hover >p{
+  color:black !important;
+ 
+}
+.portfoilo-pill:hover {
+  background-color: white !important;
+ 
+}
 
+.portfoilo-shadow {
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4) !important;
+}
 
 </style>
