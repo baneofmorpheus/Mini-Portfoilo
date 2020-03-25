@@ -87,18 +87,18 @@ export default {
           name:"Loop Aba",
           description:"E-commerce app with payment integration"
         },
-         seven:{
-          id:"seven",
-          url:"http://grimebusters.enapstargroup.com/",
-          name:"Grimebusters",
-          description:"Company profile"
-        },
-         eight:{
-          id:"eight",
-          url:"https://bdzofficial.com/",
-          name:"Bdz official",
-          description:"E-commerce app with payment integration"
-        },
+        //  seven:{
+        //   id:"seven",
+        //   url:"http://grimebusters.enapstargroup.com/",
+        //   name:"Grimebusters",
+        //   description:"Company profile"
+        // },
+        //  eight:{
+        //   id:"eight",
+        //   url:"https://bdzofficial.com/",
+        //   name:"Bdz official",
+        //   description:"E-commerce app with payment integration"
+        // },
          nine:{
           id:"nine",
           url:"https://habbyrose.com/",
