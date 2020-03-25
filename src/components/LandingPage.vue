@@ -25,7 +25,7 @@
          
           <b-col cols="12" class="mt-2">
              <span><a href="https://www.linkedin.com/in/leon-chux/" target="_blank"> <i class="fab fa-linkedin-in"></i> </a></span>
-             <span class="ml-3"><a href="github.com/baneofmorpheus" target="_blank"> <i class="fab fa-github"></i> </a></span>
+             <span class="ml-3"><a href="https://www.github.com/baneofmorpheus" target="_blank"> <i class="fab fa-github"></i> </a></span>
 
           </b-col>
 
