@@ -16,7 +16,7 @@
       </b-col>
       <b-col cols="12" class="text-center">
 
-        <b-row class="mt-4 justify-content-center">
+        <b-row class="mt-2 justify-content-center">
           <b-col cols="12" class="text-center">
                   <span class=""><i class="fas fa-phone-alt text-color"></i> <span class="contact text-color">(+234)8101209762</span></span>
 
