@@ -87,12 +87,12 @@ export default {
           name:"Loop Aba",
           description:"E-commerce app with payment integration"
         },
-        //  seven:{
-        //   id:"seven",
-        //   url:"http://grimebusters.enapstargroup.com/",
-        //   name:"Grimebusters",
-        //   description:"Company profile"
-        // },
+         seven:{
+          id:"seven",
+          url:"https://spronet.ng/",
+          name:"Spronet",
+          description:"A B2b web app solution"
+        },
         //  eight:{
         //   id:"eight",
         //   url:"https://bdzofficial.com/",
