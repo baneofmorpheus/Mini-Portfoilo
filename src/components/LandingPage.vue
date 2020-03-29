@@ -89,7 +89,7 @@ export default {
         },
          seven:{
           id:"seven",
-          url:"https://spronet.ng/",
+          url:"http://spronet.ng/",
           name:"Spronet",
           description:"A B2b web app solution"
         },
