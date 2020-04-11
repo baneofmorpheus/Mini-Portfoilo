@@ -111,12 +111,12 @@ export default {
           name:"Auxanet Nigeria Limited",
           description:"Company profile site"
         },
-         eleven:{
-          id:"eleven",
-          url:"https://blue.beautyonthegolive.com/",
-          name:"True Blue Energy",
-          description:"Company profile site"
-        },
+        //  eleven:{
+        //   id:"eleven",
+        //   url:"https://blue.beautyonthegolive.com/",
+        //   name:"True Blue Energy",
+        //   description:"Company profile site"
+        // },
           twelve:{
           id:"twelve",
           url:"http://www.arquilaxgroup.com/",
