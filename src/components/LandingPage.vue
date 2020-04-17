@@ -68,12 +68,12 @@ export default {
           name:"The Luxxe Place",
           description:"E-commerce app with payment integration "
         },
-         three:{
-          id:"three",
-          url:"http://cqcxradio.co/",
-          name:"CQCX Radio ",
-          description:"Music streaming app with E-commerce functionality"
-        },
+        //  three:{
+        //   id:"three",
+        //   url:"http://cqcxradio.co/",
+        //   name:"CQCX Radio ",
+        //   description:"Music streaming app with E-commerce functionality"
+        // },
         
          five:{
           id:"five",
@@ -117,12 +117,12 @@ export default {
         //   name:"True Blue Energy",
         //   description:"Company profile site"
         // },
-          twelve:{
-          id:"twelve",
-          url:"http://www.arquilaxgroup.com/",
-          name:"Arquilax Group",
-          description:"Company profile site with logistics tracking system"
-        },
+        //   twelve:{
+        //   id:"twelve",
+        //   url:"http://www.arquilaxgroup.com/",
+        //   name:"Arquilax Group",
+        //   description:"Company profile site with logistics tracking system"
+        // },
       }
     }
   },
