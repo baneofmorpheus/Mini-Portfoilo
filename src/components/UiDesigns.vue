@@ -99,6 +99,12 @@ export default {
           name:"Uptonville Nigeria Limited ",
           description:"Alternative UI for Uptonville"
         },
+         five:{
+          id:"five",
+          url:"https://www.figma.com/file/UXUhuT9tqkJ7xhNXHSaaXh/Uptonville-2-Copy-Copy?node-id=0%3A1",
+          name:"Uptonville Nigeria Limited ",
+          description:"Alternative UI 2 for Uptonville"
+        },
         
       }
     }
