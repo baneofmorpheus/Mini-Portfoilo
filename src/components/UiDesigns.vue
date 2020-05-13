@@ -24,9 +24,9 @@
           </b-col>
          
           <b-col cols="12" class="mt-2">
-             <span class=""><a href="https://www.linkedin.com/in/leon-chux/" target="_blank"> <i class="fab portfoilo-nav-icons   fa-linkedin-in"></i> </a></span>
-             <span class="ml-3 "><a href="https://www.github.com/baneofmorpheus" target="_blank"> <i class="fab portfoilo-nav-icons   fa-github"></i> </a></span>
-             <span class="ml-3 "><a href="mailto:epicgenii18@gmail.com"> <i class="fas portfoilo-nav-icons   fa-envelope"></i> </a></span>
+             <span><a href="https://www.linkedin.com/in/leon-chux/" target="_blank"> <i class="fab portfoilo-nav-icon fa-linkedin-in"></i> </a></span>
+             <span class="ml-3"><a href="https://www.github.com/baneofmorpheus" target="_blank"> <i class="fab portfoilo-nav-icon fa-github"></i> </a></span>
+             <span class="ml-3"><a href="mailto:epicgenii18@gmail.com"> <i class="fas portfoilo-nav-icon fa-envelope"></i> </a></span>
              
 
           </b-col>
@@ -51,9 +51,9 @@
     <b-row class="mt-4 mb-5">
          <b-col cols="12" class="mt-2">
             <div class=" text-center" >
-              <span class="bg-light p-3   rounded-pill portfoilo-shadow">
+              <span class="bg-light p-3  portfoilo-shadow rounded-pill">
 
-                <router-link class=" p-3 portfoilo-nav text-decoration-none " to="/ui-designs">See UI Designs</router-link>
+                <router-link class="portfoilo-nav text-decoration-none p-3" to="/">See Sites and Applications</router-link>
               </span>
             </div>
          
@@ -66,7 +66,7 @@
 
 <script>
 export default {
-  name: 'LandingPage',
+  name: 'UiDesigns',
   props: {
     msg: String
   },
@@ -76,62 +76,30 @@ export default {
       portfoilo_data:{
         one:{
           id:"one",
-          url:"https://www.valdezartsworld.com/",
-          name:"Valdez World",
-          description:"An art display site "
+          url:"https://www.figma.com/file/4ejaSXSxVo2HFG4HycaI7i/dcl-Copy?node-id=0%3A1",
+          name:"Digital Carsolutions Limited",
+          description:"Frontend site UI for the private Workshop Application "
         },
       
         two:{
           id:"two",
-          url:"https://luxxeplace.com/",
-          name:"The Luxxe Place",
-          description:"E-commerce app with payment integration "
+          url:"https://www.figma.com/file/QT6f7P8RsE07jPLmw4Dh9m/Clutch-City?node-id=0%3A1",
+          name:"Clutch City Control Room",
+          description:"Basketball Blog UI for Clutch City"
         },
-        //  three:{
-        //   id:"three",
-        //   url:"http://cqcxradio.co/",
-        //   name:"CQCX Radio ",
-        //   description:"Music streaming app with E-commerce functionality"
-        // },
+         three:{
+          id:"three",
+          url:"https://www.figma.com/file/ZSOiaq0JtqMZbMmBclsGlu/Uptonville-school?node-id=0%3A1",
+          name:"Uptonville Nigeria Limited ",
+          description:"Company plus Training Institute UI for Uptonville"
+        },
+         four:{
+          id:"four",
+          url:"https://www.figma.com/file/3xf2G453w1Xop1omy1HgyK/Uptonville?node-id=0%3A1",
+          name:"Uptonville Nigeria Limited ",
+          description:"Alternative UI for Uptonville"
+        },
         
-         five:{
-          id:"five",
-          url:"https://faitlynbrand.com/",
-          name:"Fait",
-          description:"E-commerce app with payment integration"
-        },
-         six:{
-          id:"six",
-          url:"https://loop.rbshop.com.ng/",
-          name:"Loop Aba",
-          description:"E-commerce app with payment integration"
-        },
-         seven:{
-          id:"seven",
-          url:"http://spronet.ng/",
-          name:"Spronet",
-          description:"A B2b web app solution"
-        },
-       
-         nine:{
-          id:"nine",
-          url:"https://habbyrose.com/",
-          name:"Habby Rose",
-          description:"E-commerce app with payment integration"
-        },
-         ten:{
-          id:"ten",
-          url:"https://auxanet.kaytar.ng/",
-          name:"Auxanet Nigeria Limited",
-          description:"Company profile site"
-        },
-       
-        //   twelve:{
-        //   id:"twelve",
-        //   url:"http://www.arquilaxgroup.com/",
-        //   name:"Arquilax Group",
-        //   description:"Company profile site with logistics tracking system"
-        // },
       }
     }
   },
@@ -172,14 +140,6 @@ export default {
 
 i{
   font-size:1.3rem;
-
-}
-.portfoilo-nav-icons{
-     animation: shakeX; /* referring directly to the animation's @keyframe declaration */
-  color:black;
-  animation-duration: 4s; /* don't forget to set a duration! */
-   animation-iteration-count: 1;
-
 }
 
 .portfoilo-nav{
@@ -187,7 +147,14 @@ i{
   color:black;
   font-weight:bold;
   font-size:.8rem;
-  
+}
+.portfoilo-nav-icon{
+  color:black;
+     animation: shakeX; /* referring directly to the animation's @keyframe declaration */
+   /* animation-delay: 2s; */
+  animation-duration: 4s; /* don't forget to set a duration! */
+   animation-iteration-count: 1;
+
 }
 
 </style>
