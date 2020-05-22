@@ -74,6 +74,13 @@ export default {
     return{
     navigation:null,
       portfoilo_data:{
+        eleven:{
+          id:"eleven",
+          url:"https://clutchcitycontrolroom.com/",
+          name:"Clutch City Control Room",
+          description:"Sports Blog/Podcast site "
+        },
+      
         one:{
           id:"one",
           url:"https://www.valdezartsworld.com/",
