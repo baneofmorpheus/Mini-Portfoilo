@@ -107,6 +107,12 @@ export default {
           name:"Fait",
           description:"E-commerce app with payment integration"
         },
+         three:{
+          id:"three",
+          url:"https://cryptocret.com/",
+          name:"Cryptocret",
+          description:" Crypto Blogging Platform"
+        },
          six:{
           id:"six",
           url:"https://loop.rbshop.com.ng/",
