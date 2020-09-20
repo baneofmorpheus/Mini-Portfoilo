@@ -109,12 +109,12 @@
           //   name:"CQCX Radio ",
           //   description:"Music streaming app with E-commerce functionality"
           // },
-          three: {
-            id: "three",
-            url: "https://cryptocret.com/",
-            name: "Cryptocret",
-            description: " Crypto Blogging Platform",
-          },
+          // three: {
+          //   id: "three",
+          //   url: "https://cryptocret.com/",
+          //   name: "Cryptocret",
+          //   description: " Crypto Blogging Platform",
+          // },
 
           five: {
             id: "five",
