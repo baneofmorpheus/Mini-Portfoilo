@@ -84,6 +84,13 @@
           seven: {
             id: "seven",
             url:
+              "https://www.figma.com/file/hCanOqYmE0Ad0PZcXBswwo/D2n?node-id=0%3A1",
+            name: "D2N",
+            description: "D2N Mini Site and Marketing Page ",
+          },
+          eight: {
+            id: "eight",
+            url:
               "https://www.figma.com/file/VAf36SApmqQZhF0Ox0MFGo/Crypto-Site?node-id=0%3A1",
             name: "Cryptocret Blog",
             description: "Cryptocurrency blogging platform UI ",

@@ -116,12 +116,12 @@
           //   description: " Crypto Blogging Platform",
           // },
 
-          five: {
-            id: "five",
-            url: "https://faitlynbrand.com/",
-            name: "Fait",
-            description: "E-commerce app with payment integration",
-          },
+          // five: {
+          //   id: "five",
+          //   url: "https://faitlynbrand.com/",
+          //   name: "Fait",
+          //   description: "E-commerce app with payment integration",
+          // },
           six: {
             id: "six",
             url: "https://loop.rbshop.com.ng/",
@@ -137,9 +137,9 @@
 
           nine: {
             id: "nine",
-            url: "https://habbyrose.com/",
-            name: "Habby Rose",
-            description: "E-commerce app with payment integration",
+            url: "https://d2n.ng/",
+            name: "D2N",
+            description: "Mini Business Site",
           },
           ten: {
             id: "ten",
