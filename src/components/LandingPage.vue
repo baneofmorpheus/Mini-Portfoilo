@@ -109,12 +109,6 @@
           //   name:"CQCX Radio ",
           //   description:"Music streaming app with E-commerce functionality"
           // },
-          // three: {
-          //   id: "three",
-          //   url: "https://cryptocret.com/",
-          //   name: "Cryptocret",
-          //   description: " Crypto Blogging Platform",
-          // },
 
           // five: {
           //   id: "five",
@@ -146,6 +140,12 @@
             url: "https://auxanet.kaytar.ng/",
             name: "Auxanet Nigeria Limited",
             description: "Company profile site",
+          },
+          three: {
+            id: "three",
+            url: "https://cryptocret.com/",
+            name: "Cryptocret",
+            description: " Crypto Blogging Platform",
           },
 
           //   twelve:{
