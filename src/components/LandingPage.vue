@@ -89,6 +89,12 @@
             name: "The Luxxe Place",
             description: "E-commerce app with payment integration ",
           },
+          two: {
+            id: "sixteen",
+            url: "https://digitalcarsolutions.com/",
+            name: "Digital Carsolutions",
+            description: "Company Site and Workshop Management Application",
+          },
 
           one: {
             id: "one",
