@@ -111,13 +111,13 @@
             name: "Clutch City Control Room",
             description: "Basketball Blog UI for Clutch City",
           },
-          six: {
-            id: "six",
-            url:
-              "https://www.figma.com/file/XzOWE5JAWn6FI1Mowfjo8E/Oyedokun-App?node-id=0%3A1",
-            name: "Family Tree App",
-            description: "Family Tree App with Backend management",
-          },
+          // six: {
+          //   id: "six",
+          //   url:
+          //     "https://www.figma.com/file/XzOWE5JAWn6FI1Mowfjo8E/Oyedokun-App?node-id=0%3A1",
+          //   name: "Family Tree App",
+          //   description: "Family Tree App with Backend management",
+          // },
           three: {
             id: "three",
             url:
