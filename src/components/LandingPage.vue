@@ -95,6 +95,19 @@
             name: "Digital Carsolutions",
             description: "Company Site and Workshop Management Application",
           },
+          three: {
+            id: "three",
+            url: "https://fuspay.com.ng",
+            name: "Fuspay",
+            description:
+              "Worked with the backend team for Fuspay (A Payment Solution)",
+          },
+          // five: {
+          //   id: "five",
+          //   url: "https://onedisk.app",
+          //   name: "Onedisk",
+          //   description: "Worked with the backend team for Fuspay (A Payment Solution)",
+          // },
 
           one: {
             id: "one",

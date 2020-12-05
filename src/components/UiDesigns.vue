@@ -111,6 +111,14 @@
             name: "Clutch City Control Room",
             description: "Basketball Blog UI for Clutch City",
           },
+
+          six: {
+            id: "six",
+            url:
+              "https://www.figma.com/file/xObqYim1SIok8fl89GIojt/Paypoint?node-id=0%3A1",
+            name: "Paypoint ",
+            description: "Site and Admin Back office for Paypoint",
+          },
           // six: {
           //   id: "six",
           //   url:
