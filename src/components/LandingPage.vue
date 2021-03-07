@@ -102,12 +102,6 @@
             description:
               "Worked with the backend team for Fuspay (A Payment Solution)",
           },
-          // five: {
-          //   id: "five",
-          //   url: "https://onedisk.app",
-          //   name: "Onedisk",
-          //   description: "Worked with the backend team for Fuspay (A Payment Solution)",
-          // },
 
           one: {
             id: "one",
@@ -122,19 +116,7 @@
             name: "Clutch City Control Room",
             description: "Sports Blog/Podcast site ",
           },
-          //  three:{
-          //   id:"three",
-          //   url:"http://cqcxradio.co/",
-          //   name:"CQCX Radio ",
-          //   description:"Music streaming app with E-commerce functionality"
-          // },
 
-          // five: {
-          //   id: "five",
-          //   url: "https://faitlynbrand.com/",
-          //   name: "Fait",
-          //   description: "E-commerce app with payment integration",
-          // },
           six: {
             id: "six",
             url: "https://loop.rbshop.com.ng/",
@@ -167,12 +149,18 @@
             description: " Crypto Blogging Platform",
           },
 
-          //   twelve:{
-          //   id:"twelve",
-          //   url:"http://www.arquilaxgroup.com/",
-          //   name:"Arquilax Group",
-          //   description:"Company profile site with logistics tracking system"
-          // },
+          twenty: {
+            id: "twenty",
+            url: "https://lightbearersclub.com/",
+            name: "Lightbearers Club",
+            description: "Lifestyle Blog",
+          },
+          twenty_one: {
+            id: "twenty_one",
+            url: "https://onedisk.app",
+            name: "Onedisk Oauth",
+            description: "Oauth application",
+          },
         },
       };
     },
@@ -180,7 +168,6 @@
       navigate(id) {
         let url = this.portfoilo_data[id]["url"];
         window.open(url, "_blank");
-        console.log(url);
       },
     },
   };

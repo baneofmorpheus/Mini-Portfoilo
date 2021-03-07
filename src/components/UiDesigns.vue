@@ -147,6 +147,13 @@
             name: "Uptonville Nigeria Limited ",
             description: "Alternative UI 2 for Uptonville",
           },
+          ten: {
+            id: "ten",
+            url:
+              "https://www.figma.com/file/VIvWD4Bl753rfX1JoJKKeh/Apollo?node-id=1%3A2",
+            name: "Apollo Hou",
+            description: "Sports blog",
+          },
         },
       };
     },
@@ -154,7 +161,7 @@
       navigate(id) {
         let url = this.portfoilo_data[id]["url"];
         window.open(url, "_blank");
-        console.log(url);
+    
       },
     },
   };
