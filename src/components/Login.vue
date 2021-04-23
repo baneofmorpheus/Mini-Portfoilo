@@ -1,137 +1,89 @@
 <template>
   <div class="container">
-    <div class="row">
-      <div class=" col">
-        <form action=""></form>
+    <div class="row justify-content-center align-content-center pt-3">
+      <div class=" col-md-8 col-12 text-center">
+        <div
+          v-if="showAlert"
+          class="alert d-fixed alert-warning alert-dismissible fade show"
+          role="alert"
+        >
+          You are not authorized to login to this site
+          <button
+            @click="showAlert = false"
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="alert"
+            aria-label="Close"
+          ></button>
+        </div>
+        <h4 class="text-white ">Sign in to the Admin section</h4>
+        <div id="firebaseui-auth-container"></div>
+        <div v-if="loading" class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+  import firebase from "firebase/app";
+  import { firebaseAuth } from "@/main";
+
+  import * as firebaseui from "firebaseui";
+
   export default {
-    name: "LandingPage",
+    name: "Login",
     props: {
       msg: String,
     },
     data: function() {
       return {
-        navigation: null,
-        portfoilo_data: {
-          two: {
-            id: "two",
-            url: "http://apollohou.com/",
-            name: "Apollo Hou",
-            description: "Houston based Sports Blog and Podcast site.",
-          },
-          sixteen: {
-            id: "sixteen",
-            url: "https://digitalcarsolutions.com/",
-            name: "Digital Carsolutions",
-            description: "Company Site and Workshop Management Application",
-          },
-          three: {
-            id: "three",
-            url: "https://fuspay.com.ng",
-            name: "Fuspay",
-            description:
-              "Worked with the backend team for Fuspay (A Payment Solution)",
-          },
-
-          one: {
-            id: "one",
-            url: "https://www.valdezartsworld.com/",
-            name: "Valdez World",
-            description: "An art display site ",
-          },
-
-          eleven: {
-            id: "eleven",
-            url: "https://clutchcitycontrolroom.com/",
-            name: "Clutch City Control Room",
-            description: "Sports Blog/Podcast site ",
-          },
-
-          seven: {
-            id: "seven",
-            url: "https://spronet.ng/",
-            name: "Spronet",
-            description: "A B2b web app solution",
-          },
-
-          nine: {
-            id: "nine",
-            url: "https://d2n.ng/",
-            name: "D2N",
-            description: "Landing Page for D2N",
-          },
-
-          nineteen: {
-            id: "nineteen",
-            url: "http://havilahglobalresources.com/",
-            name: "Havilah Global",
-            description: "Logistics/Shipping site",
-          },
-
-          twenty: {
-            id: "twenty",
-            url: "https://lightbearersclub.com/",
-            name: "Lightbearers Club",
-            description: "Lifestyle Blog",
-          },
-          twenty_one: {
-            id: "twenty_one",
-            url: "https://onedisk.app",
-            name: "Onedisk Oauth",
-            description:
-              "Oauth application(Worked on API and dashboard for users and merchants)",
-          },
-        },
+        showAlert: false,
+        loading: true,
       };
     },
     methods: {
+      test() {
+        console.log("test wporking");
+      },
       navigate(id) {
         let url = this.portfoilo_data[id]["url"];
         window.open(url, "_blank");
       },
     },
+    mounted() {
+      const ui = new firebaseui.auth.AuthUI(firebaseAuth);
+      ui.start("#firebaseui-auth-container", {
+        callbacks: {
+          signInSuccessWithAuthResult: (authResult) => {
+            // User successfully signed in.
+            // Return type determines whether we continue the redirect automatically
+            // or whether we leave that to developer to handle.
+            console.log(authResult);
+            if (authResult.email != "epicgenii18@gmail.com") {
+              return (this.showAlert = true);
+            }
+
+            return true;
+          },
+          uiShown: () => {
+            // The widget is rendered.
+            // Hide the loader.
+            this.loading = false;
+            // document.getElementById('loader').style.display = 'none';
+          },
+        },
+        signInSuccessUrl: "/admin",
+        signInOptions: [
+          // List of OAuth providers supported.
+          firebase.auth.GoogleAuthProvider.PROVIDER_ID,
+        ],
+        // Other config options...
+      });
+    },
   };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-  .text-color {
-    color: #dcc1c2;
-  }
-  .portfoilo-pill {
-    cursor: pointer;
-  }
-  .portfoilo-pill:hover > p {
-    color: black !important;
-  }
-  .portfoilo-pill:hover {
-    background-color: white !important;
-  }
-
-  .portfoilo-shadow {
-    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4) !important;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.4) !important;
-  }
-
-  i {
-    font-size: 1.3rem;
-  }
-  .portfoilo-nav-icons {
-    animation: shakeX; /* referring directly to the animation's @keyframe declaration */
-    color: black;
-    animation-duration: 4s; /* don't forget to set a duration! */
-    animation-iteration-count: 1;
-  }
-
-  .portfoilo-nav {
-    /* color:#0056B3; */
-    color: black;
-    font-weight: bold;
-    font-size: 0.8rem;
-  }
-</style>
+<style scoped></style>

@@ -1,20 +1,23 @@
 <template>
   <div id="app">
-    <router-view></router-view>
-   
+    <div class="container">
+      <router-view></router-view>
+    </div>
   </div>
- 
 </template>
 
 <script>
-
-
-export default {
-  name: 'App',
- 
-}
+  export default {
+    name: "App",
+  };
 </script>
 
-<style>
-
+<style lang="scss" scoped>
+  $fullHeight: 100vh;
+  #app {
+    height: $fullHeight;
+    .container {
+      height: $fullHeight;
+    }
+  }
 </style>
