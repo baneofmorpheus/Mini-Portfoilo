@@ -119,13 +119,13 @@
             name: "Paypoint ",
             description: "Site and Admin Back office for Paypoint",
           },
-          // six: {
-          //   id: "six",
-          //   url:
-          //     "https://www.figma.com/file/XzOWE5JAWn6FI1Mowfjo8E/Oyedokun-App?node-id=0%3A1",
-          //   name: "Family Tree App",
-          //   description: "Family Tree App with Backend management",
-          // },
+          nine: {
+            id: "nine",
+            url:
+              "https://www.figma.com/file/52ssrJhUmJpTsOGU8h9AOl/HolarDerb?node-id=0%3A1",
+            name: "Havilah Global",
+            description: "Logistics/Shipping Site",
+          },
           three: {
             id: "three",
             url:
@@ -133,26 +133,13 @@
             name: "Uptonville Nigeria Limited ",
             description: "Company plus Training Institute UI for Uptonville",
           },
-          four: {
-            id: "four",
-            url:
-              "https://www.figma.com/file/3xf2G453w1Xop1omy1HgyK/Uptonville?node-id=0%3A1",
-            name: "Uptonville Nigeria Limited ",
-            description: "Alternative UI for Uptonville",
-          },
-          five: {
-            id: "five",
-            url:
-              "https://www.figma.com/file/UXUhuT9tqkJ7xhNXHSaaXh/Uptonville-2-Copy-Copy?node-id=0%3A1",
-            name: "Uptonville Nigeria Limited ",
-            description: "Alternative UI 2 for Uptonville",
-          },
+
           ten: {
             id: "ten",
             url:
               "https://www.figma.com/file/VIvWD4Bl753rfX1JoJKKeh/Apollo?node-id=1%3A2",
             name: "Apollo Hou",
-            description: "Sports blog",
+            description: "Sports blog and podcast",
           },
         },
       };
@@ -161,7 +148,6 @@
       navigate(id) {
         let url = this.portfoilo_data[id]["url"];
         window.open(url, "_blank");
-    
       },
     },
   };

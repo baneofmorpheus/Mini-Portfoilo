@@ -1,76 +1,11 @@
 <template>
-  <b-container>
-    <b-row class="justify-content-center">
-      <b-col cols="4" md="2">
-        <div class="d-flex justify-content-center">
-          <img
-            class="img-fluid rounded-circle bg-white "
-            src="@/assets/img/huey.png"
-            alt=""
-          />
-        </div>
-      </b-col>
-      <b-col cols="12" class="text-center mt-3">
-        <h5 class="font-weight-bolder text-color">Leon Chux</h5>
-
-        <p class="mt-3 mb-0 text-color">Fullstack Developer</p>
-        <p class="m-0 text-color">
-          Some of the projects i've worked on are shown below
-        </p>
-      </b-col>
-      <b-col cols="12" class="text-center">
-        <b-row class="mt-2 justify-content-center">
-          <b-col cols="12" class="text-center">
-            <span class=""
-              ><i class="fas fa-phone-alt text-color"></i>
-              <span class="contact text-color">(+234)8101209762</span></span
-            >
-          </b-col>
-
-          <b-col cols="12" class="mt-2">
-            <span class=""
-              ><a href="https://www.linkedin.com/in/leon-chux/" target="_blank">
-                <i class="fab portfoilo-nav-icons   fa-linkedin-in"></i> </a
-            ></span>
-            <span class="ml-3 "
-              ><a href="https://www.github.com/baneofmorpheus" target="_blank">
-                <i class="fab portfoilo-nav-icons   fa-github"></i> </a
-            ></span>
-            <span class="ml-3 "
-              ><a href="mailto:epicgenii18@gmail.com">
-                <i class="fas portfoilo-nav-icons   fa-envelope"></i> </a
-            ></span>
-          </b-col>
-        </b-row>
-      </b-col>
-      <b-col cols="12" md="8" lg="6" class="mt-3 text-center">
-        <div
-          :key="value.id"
-          @click="navigate(value.id)"
-          v-for="value in portfoilo_data"
-          class="rounded-pill bg-dark pt-2 pb-2 portfoilo-pill mb-2 portfoilo-shadow"
-        >
-          <p class="text-white m-0">{{ value.name }}</p>
-          <p class="text-white m-0">
-            <small>{{ value.description }}</small>
-          </p>
-        </div>
-      </b-col>
-    </b-row>
-    <b-row class="mt-4 mb-5">
-      <b-col cols="12" class="mt-2">
-        <div class=" text-center">
-          <span class="bg-light p-3   rounded-pill portfoilo-shadow">
-            <router-link
-              class=" p-3 portfoilo-nav text-decoration-none "
-              to="/ui-designs"
-              >See UI Designs</router-link
-            >
-          </span>
-        </div>
-      </b-col>
-    </b-row>
-  </b-container>
+  <div class="container">
+    <div class="row">
+      <div class=" col">
+        <form action=""></form>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
