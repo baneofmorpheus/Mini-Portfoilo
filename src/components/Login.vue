@@ -61,8 +61,9 @@
             // Return type determines whether we continue the redirect automatically
             // or whether we leave that to developer to handle.
             console.log(authResult);
-            if (authResult.email != "epicgenii18@gmail.com") {
-              return (this.showAlert = true);
+            if (authResult.user.email != "epicgenii18@gmail.com") {
+              this.showAlert = true;
+              return false;
             }
 
             return true;

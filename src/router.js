@@ -3,7 +3,7 @@ import Router from "vue-router";
 import LandingPage from "./components/LandingPage.vue";
 import AdminManagement from "./components/AdminManagement.vue";
 import Login from "./components/Login.vue";
-import UiDesigns from "./components/UiDesigns.vue";
+// import UiDesigns from "./components/UiDesigns.vue";
 
 Vue.use(Router);
 
@@ -26,11 +26,11 @@ export default new Router({
       name: "AdminManagement",
       component: AdminManagement,
     },
-    {
-      path: "/ui-designs",
-      name: "UiDesigns",
-      component: UiDesigns,
-    },
+    // {
+    //   path: "/ui-designs",
+    //   name: "UiDesigns",
+    //   component: UiDesigns,
+    // },
   ],
   scrollBehavior() {
     return { x: 0, y: 0 };

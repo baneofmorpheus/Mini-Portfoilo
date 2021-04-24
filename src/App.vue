@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div class="">
       <router-view></router-view>
     </div>
   </div>
@@ -14,6 +14,7 @@
 
 <style lang="scss" scoped>
   $fullHeight: 100vh;
+
   #app {
     height: $fullHeight;
     .container {

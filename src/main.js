@@ -3,7 +3,10 @@ import App from "./App.vue";
 import router from "./router";
 import firebase from "firebase/app";
 import "firebase/auth";
+import "firebase/firestore";
 import "firebaseui/dist/firebaseui.css";
+import "bootstrap/scss/bootstrap.scss";
+import UUID from "vue-uuid";
 
 Vue.config.productionTip = false;
 const firebaseConfig = {
@@ -17,7 +20,8 @@ const firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 export const firebaseAuth = firebase.auth();
-
+export const db = firebase.firestore();
+Vue.use(UUID);
 new Vue({
   router,
   render: (h) => h(App),
